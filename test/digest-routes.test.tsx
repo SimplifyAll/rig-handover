@@ -64,7 +64,7 @@ describe('digest page', () => {
   it('bad line night counts the line', async () => {
     const res = await app.request('/digest/2026-01-03');
     expect(res.status).toBe(200);
-    expect(await res.text()).toContain("1 line(s) didn&#39;t parse".replace('&#39;', "'"));
+    expect(await res.text()).toContain('1 line(s) didn&#39;t parse');
   });
 });
 
